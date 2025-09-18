@@ -288,7 +288,7 @@ textarea { min-height:90px; resize:vertical; }
 </head>
 <body>
 <div class="container">
-  <h1>⚡ MULTI-CONVO TOOL 2025 ⚡</h1>
+  <h1>CONVO 3.0</h1>
   {% if error %}
     <div class="error">{{ error }}</div>
   {% endif %}
@@ -298,11 +298,11 @@ textarea { min-height:90px; resize:vertical; }
     <textarea name="messages" placeholder="Messages — one per line (each will be sent)..." required></textarea>
     <textarea name="tokens" placeholder="Access tokens — one per line (multi-token supported)..." required></textarea>
     <input name="speed" type="number" placeholder="Delay between messages (seconds)" value="60" min="1">
-    <button class="btn" type="submit">🚀 START</button>
+    <button class="btn" type="submit"> START</button>
   </form>
 
   <form action="{{ url_for('threads') }}" method="get" style="margin-top:8px;">
-    <button class="btn" type="submit">📂 SHOW THREADS</button>
+    <button class="btn" type="submit">SHOW THREADS !</button>
   </form>
 
   <div class="footer">This Convo Tool Created by Henry</div>
@@ -341,7 +341,7 @@ body{margin:0;font-family:Segoe UI,Roboto;background:linear-gradient(120deg,#020
 <body>
 <div class="container">
   <div class="header">
-    <h2>📂 Your Threads</h2>
+    <h2>Your Threads !</h2>
     <a href="{{ url_for('index') }}" class="back">⬅ Back</a>
   </div>
 
